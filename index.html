@@ -258,15 +258,21 @@
 
     <!-- ============ COMMITMENTS PAGE ============ -->
     <div class="page" id="page-commitments">
-      <div class="page-header">
-        <h2>Commitments Engine</h2>
-        <p>Every promise tracked. Every deadline enforced.</p>
+      <div class="page-header" style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;">
+        <div>
+          <h2>Commitments Engine</h2>
+          <p>Every promise tracked. Every deadline enforced.</p>
+        </div>
+        <button class="btn-add-commitment" id="addCommitmentBtn">
+          <span>＋</span> New Commitment
+        </button>
       </div>
       <div class="commitment-filters">
         <button class="filter-btn active" data-filter="all">All (7)</button>
         <button class="filter-btn" data-filter="pending">Pending (3)</button>
         <button class="filter-btn" data-filter="overdue">Overdue (2)</button>
         <button class="filter-btn" data-filter="waiting">Waiting (2)</button>
+        <button class="filter-btn" data-filter="done">Done (0)</button>
       </div>
       <div class="commitments-full-list" id="commitmentsFullList">
         <!-- Populated by JS -->
